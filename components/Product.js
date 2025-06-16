@@ -9,7 +9,7 @@ const Product = ({key, product}) => {
         <img src={product?.photo?.image?.publicUrlTransformed} 
         alt={product.name}/>
         <Title>
-            <Link href={`/product/${product.name}`}>{product.name}</Link>
+            <Link href={`/product/${product.id}`}>{product.name}</Link>
         </Title>
         <PriceTag>{formatMoney(product.price)}</PriceTag>
         <p>{product.description}</p>
